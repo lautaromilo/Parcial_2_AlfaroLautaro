@@ -194,11 +194,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 530219}
   m_CullTransparentMesh: 1
---- !u!1 &8723872 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2589528072281513479, guid: 99aec57502744914689c4207774834aa, type: 3}
-  m_PrefabInstance: {fileID: 1755797200}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &175531610
 GameObject:
   m_ObjectHideFlags: 0
@@ -403,75 +398,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5888765399538998960, guid: ad818c36731146e994540a1896ad8f24, type: 3}
   m_PrefabInstance: {fileID: 180263445}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &198600678
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2589528072281513479, guid: 99aec57502744914689c4207774834aa, type: 3}
-      propertyPath: m_Name
-      value: BolaDeNieveLaqueva (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 3053656357370574600, guid: 99aec57502744914689c4207774834aa, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3053656357370574600, guid: 99aec57502744914689c4207774834aa, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3053656357370574600, guid: 99aec57502744914689c4207774834aa, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3053656357370574600, guid: 99aec57502744914689c4207774834aa, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.501
-      objectReference: {fileID: 0}
-    - target: {fileID: 3053656357370574600, guid: 99aec57502744914689c4207774834aa, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.265
-      objectReference: {fileID: 0}
-    - target: {fileID: 3053656357370574600, guid: 99aec57502744914689c4207774834aa, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -1.365
-      objectReference: {fileID: 0}
-    - target: {fileID: 3053656357370574600, guid: 99aec57502744914689c4207774834aa, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3053656357370574600, guid: 99aec57502744914689c4207774834aa, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3053656357370574600, guid: 99aec57502744914689c4207774834aa, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3053656357370574600, guid: 99aec57502744914689c4207774834aa, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3053656357370574600, guid: 99aec57502744914689c4207774834aa, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3053656357370574600, guid: 99aec57502744914689c4207774834aa, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3053656357370574600, guid: 99aec57502744914689c4207774834aa, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 99aec57502744914689c4207774834aa, type: 3}
 --- !u!1 &257896630
 GameObject:
   m_ObjectHideFlags: 0
@@ -690,75 +616,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 458908653}
   m_CullTransparentMesh: 1
---- !u!1001 &492121396
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2589528072281513479, guid: 99aec57502744914689c4207774834aa, type: 3}
-      propertyPath: m_Name
-      value: BolaDeNieveLaqueva (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 3053656357370574600, guid: 99aec57502744914689c4207774834aa, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3053656357370574600, guid: 99aec57502744914689c4207774834aa, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3053656357370574600, guid: 99aec57502744914689c4207774834aa, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3053656357370574600, guid: 99aec57502744914689c4207774834aa, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 1.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3053656357370574600, guid: 99aec57502744914689c4207774834aa, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.265
-      objectReference: {fileID: 0}
-    - target: {fileID: 3053656357370574600, guid: 99aec57502744914689c4207774834aa, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -2.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 3053656357370574600, guid: 99aec57502744914689c4207774834aa, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3053656357370574600, guid: 99aec57502744914689c4207774834aa, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3053656357370574600, guid: 99aec57502744914689c4207774834aa, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3053656357370574600, guid: 99aec57502744914689c4207774834aa, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3053656357370574600, guid: 99aec57502744914689c4207774834aa, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3053656357370574600, guid: 99aec57502744914689c4207774834aa, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3053656357370574600, guid: 99aec57502744914689c4207774834aa, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 99aec57502744914689c4207774834aa, type: 3}
 --- !u!1 &548006188
 GameObject:
   m_ObjectHideFlags: 0
@@ -954,6 +811,67 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_IsOn: 1
+--- !u!1001 &650804693
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2589528072281513479, guid: 99aec57502744914689c4207774834aa, type: 3}
+      propertyPath: m_Name
+      value: BolaDeNieve
+      objectReference: {fileID: 0}
+    - target: {fileID: 3053656357370574600, guid: 99aec57502744914689c4207774834aa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.517
+      objectReference: {fileID: 0}
+    - target: {fileID: 3053656357370574600, guid: 99aec57502744914689c4207774834aa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.734
+      objectReference: {fileID: 0}
+    - target: {fileID: 3053656357370574600, guid: 99aec57502744914689c4207774834aa, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.415
+      objectReference: {fileID: 0}
+    - target: {fileID: 3053656357370574600, guid: 99aec57502744914689c4207774834aa, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3053656357370574600, guid: 99aec57502744914689c4207774834aa, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3053656357370574600, guid: 99aec57502744914689c4207774834aa, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3053656357370574600, guid: 99aec57502744914689c4207774834aa, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3053656357370574600, guid: 99aec57502744914689c4207774834aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3053656357370574600, guid: 99aec57502744914689c4207774834aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3053656357370574600, guid: 99aec57502744914689c4207774834aa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8410429396528633751, guid: 99aec57502744914689c4207774834aa, type: 3}
+      propertyPath: m_Mass
+      value: 0.2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 99aec57502744914689c4207774834aa, type: 3}
 --- !u!1 &662261859
 GameObject:
   m_ObjectHideFlags: 0
@@ -1928,7 +1846,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8135023674665499069, guid: 58d0a4ac86f2348deb02f3880c71378e, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8518324294302271954, guid: 58d0a4ac86f2348deb02f3880c71378e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2744,76 +2662,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Mask
   m_ShowMaskGraphic: 0
---- !u!1001 &1755797200
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2589528072281513479, guid: 99aec57502744914689c4207774834aa, type: 3}
-      propertyPath: m_Name
-      value: BolaDeNieveLaqueva
-      objectReference: {fileID: 0}
-    - target: {fileID: 3053656357370574600, guid: 99aec57502744914689c4207774834aa, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3053656357370574600, guid: 99aec57502744914689c4207774834aa, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3053656357370574600, guid: 99aec57502744914689c4207774834aa, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3053656357370574600, guid: 99aec57502744914689c4207774834aa, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 1.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3053656357370574600, guid: 99aec57502744914689c4207774834aa, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.265
-      objectReference: {fileID: 0}
-    - target: {fileID: 3053656357370574600, guid: 99aec57502744914689c4207774834aa, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -2.505
-      objectReference: {fileID: 0}
-    - target: {fileID: 3053656357370574600, guid: 99aec57502744914689c4207774834aa, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3053656357370574600, guid: 99aec57502744914689c4207774834aa, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3053656357370574600, guid: 99aec57502744914689c4207774834aa, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3053656357370574600, guid: 99aec57502744914689c4207774834aa, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3053656357370574600, guid: 99aec57502744914689c4207774834aa, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3053656357370574600, guid: 99aec57502744914689c4207774834aa, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3053656357370574600, guid: 99aec57502744914689c4207774834aa, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 0}
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 99aec57502744914689c4207774834aa, type: 3}
 --- !u!1001 &1801647007
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2895,7 +2743,7 @@ PrefabInstance:
     - target: {fileID: 1261176482088155145, guid: 6c2511e619683894aad4a71f1cb946db, type: 3}
       propertyPath: prefabProyectil
       value: 
-      objectReference: {fileID: 8723872}
+      objectReference: {fileID: 0}
     - target: {fileID: 2696003311425392521, guid: 6c2511e619683894aad4a71f1cb946db, type: 3}
       propertyPath: m_Name
       value: Snowman1
@@ -3256,6 +3104,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2074239554}
   - component: {fileID: 2074239555}
+  - component: {fileID: 2074239556}
   m_Layer: 0
   m_Name: Translacion
   m_TagString: Untagged
@@ -3328,6 +3177,55 @@ MonoBehaviour:
     m_ObjectReferenceObject: {fileID: 0}
     m_ManualValue: {x: 0, y: 0}
   m_UseGravity: 1
+--- !u!114 &2074239556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2074239553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9f365cf844c03449bc8973eead2c3c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.Locomotion.Turning.SnapTurnProvider
+  m_Mediator: {fileID: 999055382}
+  m_TransformationPriority: 0
+  m_TurnAmount: 45
+  m_DebounceTime: 0.5
+  m_EnableTurnLeftRight: 1
+  m_EnableTurnAround: 1
+  m_DelayTime: 0
+  m_LeftHandTurnInput:
+    m_InputSourceMode: 2
+    m_InputAction:
+      m_Name: Left Hand Snap Turn
+      m_Type: 0
+      m_ExpectedControlType: Vector2
+      m_Id: 519a7938-91c8-4311-a980-ae039106dc91
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+      m_Priority: 0
+    m_InputActionReference: {fileID: 1010738217276881514, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+    m_ObjectReferenceObject: {fileID: 0}
+    m_ManualValue: {x: 0, y: 0}
+  m_RightHandTurnInput:
+    m_InputSourceMode: 2
+    m_InputAction:
+      m_Name: Right Hand Snap Turn
+      m_Type: 0
+      m_ExpectedControlType: Vector2
+      m_Id: fc76afe9-4c11-4d78-bd40-917fbdd3bf06
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+      m_Priority: 0
+    m_InputActionReference: {fileID: -6493913391331992944, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+    m_ObjectReferenceObject: {fileID: 0}
+    m_ManualValue: {x: 0, y: 0}
 --- !u!1001 &2094379416
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3697,6 +3595,4 @@ SceneRoots:
   - {fileID: 677490322}
   - {fileID: 662261863}
   - {fileID: 1828051102}
-  - {fileID: 1755797200}
-  - {fileID: 492121396}
-  - {fileID: 198600678}
+  - {fileID: 650804693}
