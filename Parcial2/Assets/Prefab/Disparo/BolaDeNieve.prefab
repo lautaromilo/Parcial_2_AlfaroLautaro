@@ -155,12 +155,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable
   m_InteractionManager: {fileID: 0}
-  m_Colliders:
-  - {fileID: 5188220099762858631}
+  m_Colliders: []
   m_InteractionLayers:
     m_Bits: 1
   m_DistanceCalculationMode: 1
-  m_SelectMode: 0
+  m_SelectMode: 1
   m_FocusMode: 1
   m_CustomReticle: {fileID: 0}
   m_AllowGazeInteraction: 0
@@ -285,5 +284,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf5b971e998eb6145be7993eb242055e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ProyectilEnemigo
-  velocidad: 10
-  tiempoDeVida: 60
+  velocidad: 8
+  tiempoDeVida: 30
