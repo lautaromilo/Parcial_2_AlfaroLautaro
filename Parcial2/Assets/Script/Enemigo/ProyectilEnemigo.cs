@@ -25,6 +25,8 @@ public class ProyectilEnemigo : MonoBehaviour
         // Si te pega a vos, por ahora desaparece
         if (other.CompareTag("Player"))
         {
+            
+            Debug.Log("Te pago");
             Destroy(gameObject);
             return;
         }

@@ -3,13 +3,16 @@ using UnityEngine;
 public class EnemigoNieve : MonoBehaviour
 {
     [Header("Configuración de Disparo")]
-    [SerializeField] private GameObject prefabProyectil; // ¡ACÁ VA LA BOLA DEL ENEMIGO (ProyectilEnemigo)!
+    [SerializeField] private GameObject prefabProyectil; 
     [SerializeField] private Transform puntoDisparo;     
     [SerializeField] private float intervaloDisparo = 2f; 
     [SerializeField] private float rangoVision = 30f;     
 
     [Header("Referencias")]
     [SerializeField] private Transform jugador; 
+
+    [Header("Vida")]
+    [SerializeField] private int vidas = 2; 
 
     private float proximoDisparo = 0f;
 
@@ -19,13 +22,12 @@ public class EnemigoNieve : MonoBehaviour
         {
             GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
             if (playerObj != null) jugador = playerObj.transform;
-            else Debug.LogError("¡Falta el Tag 'Player' en el XR Origin!");
         }
     }
 
     void Update()
     {
-        if (jugador == null) return;
+        if (jugador == null || vidas <= 0) return; // Si está muerto o jugador perdió, no hace nada
 
         float distancia = Vector3.Distance(transform.position, jugador.position);
 
@@ -43,11 +45,9 @@ public class EnemigoNieve : MonoBehaviour
     {
         if (prefabProyectil == null || puntoDisparo == null) return;
 
-        // Calculamos dirección a la cámara (ojos del jugador) para que apunte bien
         Transform camara = Camera.main.transform;
         Vector3 direccion = (camara.position - puntoDisparo.position).normalized;
 
-        // Creamos la bola del enemigo
         GameObject bala = Instantiate(prefabProyectil, puntoDisparo.position, Quaternion.LookRotation(direccion));
         
         ProyectilEnemigo scriptBala = bala.GetComponent<ProyectilEnemigo>();
@@ -55,5 +55,24 @@ public class EnemigoNieve : MonoBehaviour
         {
             scriptBala.Inicializar(direccion);
         }
+    }
+
+    public void RecibirDanio(int cantidad)
+    {
+        vidas -= cantidad;
+        Debug.Log(gameObject.name + " recibió daño. Vidas restantes: " + vidas);
+        Debug.Log("le pegue");
+
+        if (vidas <= 0)
+        {
+            Morir();
+        }
+    }
+
+    private void Morir()
+    {
+        Debug.Log(gameObject.name + " ha sido eliminado.");
+        
+        Destroy(gameObject); 
     }
 }

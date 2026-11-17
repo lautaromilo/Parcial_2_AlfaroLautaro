@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3259989908529900937}
   - component: {fileID: 8410429396528633751}
   - component: {fileID: 1086880605595459688}
+  - component: {fileID: 514339183638467258}
   m_Layer: 0
   m_Name: BolaDeNieve
   m_TagString: Untagged
@@ -271,3 +272,16 @@ MonoBehaviour:
   m_LimitAngularVelocity: 0
   m_MaxLinearVelocityDelta: 10
   m_MaxAngularVelocityDelta: 20
+--- !u!114 &514339183638467258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2589528072281513479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf5b971e998eb6145be7993eb242055e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BolaDeNieve
+  tiempoDeVida: 30

@@ -1,22 +1,26 @@
 using UnityEngine;
 
-public class BolaJugador : MonoBehaviour
+public class BolaDeNieve : MonoBehaviour
 {
-    [SerializeField] private float tiempoDeVida = 30f; // Se destruye a los 30 seg para no llenar la escena
+    [SerializeField] private float tiempoDeVida = 30f; 
 
     void Start()
     {
         Destroy(gameObject, tiempoDeVida); 
     }
 
-    // (Opcional para el próximo Sprint) Aquí iría el código para hacerle daño al muñeco
+    // Usamos OnCollisionEnter para choques físicos reales
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Enemigo"))
+        Debug.Log("¡La BolaDeNieve chocó contra: " + collision.gameObject.name + "!");
+
+        EnemigoNieve enemigo = collision.gameObject.GetComponentInParent<EnemigoNieve>();
+        
+        if (enemigo != null)
         {
-            // EnemigoNieve enemigo = collision.gameObject.GetComponent<EnemigoNieve>();
-            // if (enemigo != null) enemigo.RecibirDanio();
-            Destroy(gameObject);
+            Debug.Log("¡Enemigo detectado! Aplicando daño.");
+            enemigo.RecibirDanio(1); 
+            Destroy(gameObject); 
         }
     }
 }
