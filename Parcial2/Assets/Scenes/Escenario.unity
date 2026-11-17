@@ -2194,7 +2194,6 @@ GameObject:
   - component: {fileID: 1418051639}
   - component: {fileID: 1418051638}
   - component: {fileID: 1418051641}
-  - component: {fileID: 1418051643}
   - component: {fileID: 1418051642}
   m_Layer: 0
   m_Name: XR Origin (VR)
@@ -2282,23 +2281,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1418051637}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c72a5437728d7b94b967a951e1678a82, type: 3}
+  m_Script: {fileID: 11500000, guid: 8751e19fecb373e4ba191699de9caa52, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MantenerColisiones
---- !u!114 &1418051643
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1418051637}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 920d305bd8b922c4fb510314260651c9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ForzarGravedad
+  m_EditorClassIdentifier: Assembly-CSharp::VidaJugador
+  vidaMaxima: 3
 --- !u!1001 &1487485931
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -61,7 +61,6 @@ public class EnemigoNieve : MonoBehaviour
     {
         vidas -= cantidad;
         Debug.Log(gameObject.name + " recibió daño. Vidas restantes: " + vidas);
-        Debug.Log("le pegue");
 
         if (vidas <= 0)
         {

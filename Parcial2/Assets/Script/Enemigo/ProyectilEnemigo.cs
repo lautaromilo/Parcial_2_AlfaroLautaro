@@ -20,23 +20,31 @@ public class ProyectilEnemigo : MonoBehaviour
         transform.position += direccion * velocidad * Time.deltaTime;
     }
 
-    private void OnTriggerEnter(Collider other)
+
+
+  private void OnTriggerEnter(Collider other)
     {
-        // Si te pega a vos, por ahora desaparece
+        // Si le pega al jugador
         if (other.CompareTag("Player"))
         {
+            // Buscamos el script VidaJugador
+            VidaJugador vida = other.GetComponentInParent<VidaJugador>();
             
-            Debug.Log("Te pago");
-            Destroy(gameObject);
+            if (vida != null)
+            {
+                vida.RecibirDanio(1); // Le saca 1 de vida
+            }
+            
+            Destroy(gameObject); // La bola del enemigo desaparece
             return;
         }
 
-        // Si choca contra el piso o una pared, se convierte en la bola agarrable
+        // Si choca contra el piso o pared, se convierte en bola agarrable
         if (prefabBolaJugador != null)
         {
             Instantiate(prefabBolaJugador, transform.position, Quaternion.identity);
         }
         
-        Destroy(gameObject); // Destruye la bola "fantasma" del enemigo
+        Destroy(gameObject); 
     }
 }
