@@ -9,7 +9,6 @@ public class BolaDeNieve : MonoBehaviour
         Destroy(gameObject, tiempoDeVida); 
     }
 
-    // Usamos OnCollisionEnter para choques físicos reales
     private void OnCollisionEnter(Collision collision)
     {
         Debug.Log("¡La BolaDeNieve chocó contra: " + collision.gameObject.name + "!");

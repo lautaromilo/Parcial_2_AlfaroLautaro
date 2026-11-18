@@ -11,7 +11,6 @@ public class ControladorMenu : MonoBehaviour
 
     void Start()
     {
-        // Apagamos las particulas al iniciar
         if (particulasNieve != null)
         {
             particulasNieve.Stop();
@@ -20,25 +19,29 @@ public class ControladorMenu : MonoBehaviour
 
     public void BotonJugar()
     {
-        // Ocultamos el menu y encendemos la nieve
         panelMenuPrincipal.SetActive(false);
         if (particulasNieve != null)
         {
             particulasNieve.Play();
         }
+
+        EnemigoNieve[] enemigos = FindObjectsByType<EnemigoNieve>();
+        foreach (EnemigoNieve enemigo in enemigos)
+        {
+            enemigo.juegoIniciado = true;
+        }
+
         Debug.Log("¡Se tocó el botón Jugar!");
     }
 
     public void BotonCreditos()
     {
-        // Ocultamos el menu y mostramos los creditos
         panelMenuPrincipal.SetActive(false);
         panelCreditos.SetActive(true);
     }
 
     public void BotonVolverDeCreditos()
     {
-        // Ocultamos creditos y volvemos al menu principal
         panelCreditos.SetActive(false);
         panelMenuPrincipal.SetActive(true);
     }

@@ -14,6 +14,8 @@ public class EnemigoNieve : MonoBehaviour
     [Header("Vida")]
     [SerializeField] private int vidas = 2; 
 
+    public bool juegoIniciado = false; 
+
     private float proximoDisparo = 0f;
 
     void Start()
@@ -27,7 +29,9 @@ public class EnemigoNieve : MonoBehaviour
 
     void Update()
     {
-        if (jugador == null || vidas <= 0) return; // Si está muerto o jugador perdió, no hace nada
+        if (!juegoIniciado) return; 
+        
+        if (jugador == null || vidas <= 0) return; 
 
         float distancia = Vector3.Distance(transform.position, jugador.position);
 
@@ -59,6 +63,8 @@ public class EnemigoNieve : MonoBehaviour
 
     public void RecibirDanio(int cantidad)
     {
+        if (!juegoIniciado) return; 
+
         vidas -= cantidad;
         Debug.Log(gameObject.name + " recibió daño. Vidas restantes: " + vidas);
 
@@ -71,7 +77,6 @@ public class EnemigoNieve : MonoBehaviour
     private void Morir()
     {
         Debug.Log(gameObject.name + " ha sido eliminado.");
-        
         Destroy(gameObject); 
     }
 }

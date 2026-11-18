@@ -16,7 +16,6 @@ public class ProyectilEnemigo : MonoBehaviour
 
     void Update()
     {
-        // Se mueve constantemente hacia adelante
         transform.position += direccion * velocidad * Time.deltaTime;
     }
 
@@ -24,22 +23,20 @@ public class ProyectilEnemigo : MonoBehaviour
 
   private void OnTriggerEnter(Collider other)
     {
-        // Si le pega al jugador
+        
         if (other.CompareTag("Player"))
         {
-            // Buscamos el script VidaJugador
             VidaJugador vida = other.GetComponentInParent<VidaJugador>();
             
             if (vida != null)
             {
-                vida.RecibirDanio(1); // Le saca 1 de vida
+                vida.RecibirDanio(1); 
             }
             
-            Destroy(gameObject); // La bola del enemigo desaparece
+            Destroy(gameObject); 
             return;
         }
 
-        // Si choca contra el piso o pared, se convierte en bola agarrable
         if (prefabBolaJugador != null)
         {
             Instantiate(prefabBolaJugador, transform.position, Quaternion.identity);
