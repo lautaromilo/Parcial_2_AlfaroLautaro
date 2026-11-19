@@ -284,4 +284,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf5b971e998eb6145be7993eb242055e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BolaDeNieve
-  tiempoDeVida: 12
+  tiempoDeVida: 20

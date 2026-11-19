@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.SceneManagement; 
-using TMPro; 
 
 public class GameManager : MonoBehaviour
 {
@@ -8,51 +7,56 @@ public class GameManager : MonoBehaviour
     public GameObject panelPerdiste; 
     public GameObject panelGanaste;  
 
-    [Header("Configuración de Vida")]
-    public int vidaMaxima = 3;
-    private int vidaActual;
+    // Ahora es pública para que los enemigos sepan que el juego terminó
+    public bool juegoTerminado = false; 
     
-    
-    private bool juegoTerminado = false;
+    private int enemigosRestantes = 0;
 
     void Start()
     {
-        
         if (panelPerdiste != null) panelPerdiste.SetActive(false);
         if (panelGanaste != null) panelGanaste.SetActive(false);
-        
-        vidaActual = vidaMaxima;
     }
 
-    public void RecibirDaño(int cantidad)
+    public void IniciarConteoEnemigos()
     {
-        if (juegoTerminado) return; 
-
-        vidaActual -= cantidad;
-        Debug.Log("Vida actual: " + vidaActual);
-
-        if (vidaActual <= 0)
-        {
-            PerderJuego();
-        }
+        enemigosRestantes = GameObject.FindGameObjectsWithTag("Enemigo").Length;
+        Debug.Log("¡El GameManager encontró " + enemigosRestantes + " enemigos en la escena!");
     }
 
-    public void GanarJuego()
+    public void PerderJuego()
     {
         if (juegoTerminado) return;
-
-        juegoTerminado = true;
-        Debug.Log("¡Ganaste!");
-        
-        if (panelGanaste != null) panelGanaste.SetActive(true);
-    }
-
-    private void PerderJuego()
-    {
         juegoTerminado = true;
         Debug.Log("¡Perdiste!");
         
-        if (panelPerdiste != null) panelPerdiste.SetActive(true);
+        if (panelPerdiste != null) 
+            panelPerdiste.SetActive(true);
+        else 
+            Debug.LogError("¡FALTA ASIGNAR EL PANEL PERDISTE EN EL INSPECTOR!");
+    }
+
+    public void EnemigoEliminado()
+    {
+        if (juegoTerminado) return;
+
+        enemigosRestantes--;
+        Debug.Log("Enemigos restantes: " + enemigosRestantes);
+
+        if (enemigosRestantes <= 0)
+        {
+            GanarJuego();
+        }
+    }
+
+    private void GanarJuego()
+    {
+        juegoTerminado = true;
+        Debug.Log("¡Ganaste!");
+        if (panelGanaste != null) 
+            panelGanaste.SetActive(true);
+        else 
+            Debug.LogError("¡FALTA ASIGNAR EL PANEL GANASTE EN EL INSPECTOR!");
     }
 
     public void ReiniciarJuego()

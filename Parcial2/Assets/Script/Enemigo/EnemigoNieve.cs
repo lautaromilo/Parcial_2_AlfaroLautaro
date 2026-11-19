@@ -17,9 +17,12 @@ public class EnemigoNieve : MonoBehaviour
     public bool juegoIniciado = false; 
 
     private float proximoDisparo = 0f;
+    private GameManager gameManager;
 
     void Start()
     {
+        gameManager = FindAnyObjectByType<GameManager>();
+
         if (jugador == null)
         {
             GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
@@ -30,8 +33,10 @@ public class EnemigoNieve : MonoBehaviour
     void Update()
     {
         if (!juegoIniciado) return; 
-        
         if (jugador == null || vidas <= 0) return; 
+        
+        // ¡ESTA ES LA LÍNEA NUEVA! Si el juego terminó, el enemigo deja de disparar.
+        if (gameManager != null && gameManager.juegoTerminado) return;
 
         float distancia = Vector3.Distance(transform.position, jugador.position);
 
@@ -77,6 +82,12 @@ public class EnemigoNieve : MonoBehaviour
     private void Morir()
     {
         Debug.Log(gameObject.name + " fue eliminado.");
+        
+        if (gameManager != null)
+        {
+            gameManager.EnemigoEliminado();
+        }
+        
         Destroy(gameObject); 
     }
 }

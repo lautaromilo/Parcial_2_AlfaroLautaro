@@ -5,10 +5,13 @@ public class VidaJugador : MonoBehaviour
     [Header("Vida del Jugador")]
     [SerializeField] private int vidaMaxima = 10;
     private int vidaActual;
+    
+    private GameManager gameManager;
 
     void Start()
     {
         vidaActual = vidaMaxima;
+        gameManager = FindAnyObjectByType<GameManager>();
     }
 
     public void RecibirDanio(int cantidad)
@@ -18,7 +21,10 @@ public class VidaJugador : MonoBehaviour
 
         if (vidaActual <= 0)
         {
-            Debug.Log("¡Has muerto! (Por ahora solo es un mensaje)");
+            if (gameManager != null)
+            {
+                gameManager.PerderJuego();
+            }
         }
     }
 }

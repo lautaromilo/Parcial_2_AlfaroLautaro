@@ -20,15 +20,22 @@ public class ControladorMenu : MonoBehaviour
     public void BotonJugar()
     {
         panelMenuPrincipal.SetActive(false);
+        
         if (particulasNieve != null)
         {
             particulasNieve.Play();
         }
 
-        EnemigoNieve[] enemigos = FindObjectsByType<EnemigoNieve>();
+        EnemigoNieve[] enemigos = FindObjectsByType<EnemigoNieve>(FindObjectsSortMode.None);
         foreach (EnemigoNieve enemigo in enemigos)
         {
             enemigo.juegoIniciado = true;
+        }
+
+        GameManager gm = FindAnyObjectByType<GameManager>();
+        if (gm != null)
+        {
+            gm.IniciarConteoEnemigos();
         }
 
         Debug.Log("¡Se tocó el botón Jugar!");
