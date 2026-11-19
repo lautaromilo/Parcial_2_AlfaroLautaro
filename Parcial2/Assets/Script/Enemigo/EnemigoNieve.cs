@@ -76,7 +76,7 @@ public class EnemigoNieve : MonoBehaviour
 
     private void Morir()
     {
-        Debug.Log(gameObject.name + " ha sido eliminado.");
+        Debug.Log(gameObject.name + " fue eliminado.");
         Destroy(gameObject); 
     }
 }
