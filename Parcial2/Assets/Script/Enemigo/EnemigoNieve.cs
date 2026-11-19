@@ -35,7 +35,6 @@ public class EnemigoNieve : MonoBehaviour
         if (!juegoIniciado) return; 
         if (jugador == null || vidas <= 0) return; 
         
-        // ¡ESTA ES LA LÍNEA NUEVA! Si el juego terminó, el enemigo deja de disparar.
         if (gameManager != null && gameManager.juegoTerminado) return;
 
         float distancia = Vector3.Distance(transform.position, jugador.position);

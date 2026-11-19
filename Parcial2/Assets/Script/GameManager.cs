@@ -7,7 +7,6 @@ public class GameManager : MonoBehaviour
     public GameObject panelPerdiste; 
     public GameObject panelGanaste;  
 
-    // Ahora es pública para que los enemigos sepan que el juego terminó
     public bool juegoTerminado = false; 
     
     private int enemigosRestantes = 0;
@@ -33,7 +32,7 @@ public class GameManager : MonoBehaviour
         if (panelPerdiste != null) 
             panelPerdiste.SetActive(true);
         else 
-            Debug.LogError("¡FALTA ASIGNAR EL PANEL PERDISTE EN EL INSPECTOR!");
+            Debug.LogError("Nooo");
     }
 
     public void EnemigoEliminado()
@@ -56,7 +55,7 @@ public class GameManager : MonoBehaviour
         if (panelGanaste != null) 
             panelGanaste.SetActive(true);
         else 
-            Debug.LogError("¡FALTA ASIGNAR EL PANEL GANASTE EN EL INSPECTOR!");
+            Debug.LogError("Nooox2");
     }
 
     public void ReiniciarJuego()

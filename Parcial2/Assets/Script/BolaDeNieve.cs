@@ -2,10 +2,12 @@ using UnityEngine;
 
 public class BolaDeNieve : MonoBehaviour
 {
-    [SerializeField] private float tiempoDeVida = 30f; 
+    [SerializeField] private float tiempoDeVida = 20f;
+    private GameManager gameManager; 
 
     void Start()
     {
+        gameManager = FindAnyObjectByType<GameManager>();
         Destroy(gameObject, tiempoDeVida); 
     }
 
@@ -22,4 +24,16 @@ public class BolaDeNieve : MonoBehaviour
             Destroy(gameObject); 
         }
     }
+
+
+    void Update()
+    {
+        // Si el juego terminó (ganaste o perdiste), la bola se destruye inmediatamente
+        if (gameManager != null && gameManager.juegoTerminado)
+        {
+            Destroy(gameObject);
+        }
+    }
+
 }
+

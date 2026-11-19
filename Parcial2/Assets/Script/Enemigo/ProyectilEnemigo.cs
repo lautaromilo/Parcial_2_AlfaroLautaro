@@ -20,7 +20,6 @@ public class ProyectilEnemigo : MonoBehaviour
     }
 
 
-
   private void OnTriggerEnter(Collider other)
     {
         
